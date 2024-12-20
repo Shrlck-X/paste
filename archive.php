@@ -77,7 +77,7 @@ $result = mysqli_query($con, $query);
 if ($row = mysqli_fetch_array($result))
 	$siteprivate = Trim($row['siteprivate']);
 
-if ($siteprivate == 'off')
+if ($siteprivate == '')
     $privatesite = 'off';
 
 // Logout
